@@ -20,55 +20,72 @@
 		<h1>S&J</h1>
 		<img src="./img/nav-hamburger.png" alt='&#9776;'/>
 	</div>
-	<nav class='header-menu'>
+	<nav>
 		<a href='index.html'>Home</a>
 		<a href='services.html'>Services</a>
 		<a href='contact.html'>Contact</a>
 	</nav>
-
+</header>
 
 
 <!-- Home Page Content: -->
+<div class='logo'>
+	<img src='./img/home/home-jumbotron.png'/>
 	<h1>
 		Integrity,<br>
 		Excellence,<br>
 		Progress.<br>
 	</h1>
-</header>
+</div>
 
 <main>
-	<section class='content'>
-		<h2>Smith & Jones Architects</h2>
+	<section>
+		<div>
+			<h2>Smith & Jones Architects</h2>
 
-		<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p> 
+			<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p> 
 
-		<button>Learn More</button>
+			<a class='button' href=''>Learn More</a>
+		</div>
+		<img class='img-one' src='./img/home/home-img-1.png'/>
 	</section>
 
-	<section class='content'>
-		<h2>Futuristic Designs</h2>
+	<section>
+		<img class='img-two' src='./img/home/home-img-2.png' />
+		<div>
+			<h2>Futuristic Designs</h2>
 
-		<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
+			<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
 
-		<button>View Designs</button>
+			<a class='button' href=''>View Designs</a>
+		</div>
 	</section>
 
 	<section class='content'>	
 		<h2>Recent Projects</h2>
 
-		<h1 class='under left'>THE VILLAS</h1>
+		<div class='img-overlay'>
+			<img src='./img/home/home-villas-img.png'/>
+			<h3 class='under right'>THE VILLAS</h3>
+		</div>
 
 		<p>The Villas bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
 
 		<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
 
-		<h1 class='under right'>OUTSKIRTS</h1>
+		<div class='img-overlay'>
+			<img src='./img/home/home-outskirts-img.png'/>
+			<h3 class='under left'>OUTSKIRTS</h3>
+		</div>
 
 		<p>The Outskirts are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p> 
 
 		<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
 
-		<h1 class='under left'>THE BLOCKS</h1>
+		<div class='img-overlay'>
+			<img src='./img/home/home-the-blocks-img.png'/>
+			<h3 class='under right'>THE BLOCKS</h3>
+		</div>
 
 		<p>The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
 
@@ -79,7 +96,7 @@
 
 <!-- FOOTER CONTENT -->
 <footer>
-	<div class='right'>
+	<div class='footer-right'>
 		<h3>Interested in starting a project?  </h3>
 		<h3>Let’s talk:</h3>
 
@@ -88,8 +105,8 @@
 		<p>We'll never share your email with anyone else.</p>
 	</div>
 
-	<div class='left'>
-		<div class='newyork'>
+	<div class='footer-left'>
+		<div class='location newyork'>
 			<h1>New York</h1>
 			<address>
 				123 Lane<br>
@@ -99,7 +116,7 @@
 			</address>
 		</div>
 
-		<div class='florida'>
+		<div class='location florida'>
 			<h1>Florida</h1>
 			<address>
 				Ocean Drive<br>
@@ -109,7 +126,7 @@
 			</address>
 		</div>
 
-		<div class='california'>
+		<div class='location california'>
 			<h1>California</h1>
 			<address>
 				Mountain Street<br>
