@@ -3,7 +3,7 @@ class Tabs {
   constructor(tabs) {
     this.tabs = tabs;
     this.btns = this.tabs.querySelectorAll('.btn');
-    this.btns.forEach(btn => new Button(btn));
+    this.btns.forEach(btn => btn = new Button(btn));
     this.current = this.tabs.querySelector('.show');
   }
 }
@@ -13,10 +13,20 @@ class Button {
     this.btn = btn;
     this.data = this.btn.dataset.tab;
     this.card = document.querySelector(`.card[data-tab='${this.data}']`);
-    this.card.classList.add('hidden');
+    if(this.data !== 'nav') {
+      this.card.classList.add('hidden');
+    }
     this.card = new Card(this.card);
 
-    this.btn.addEventListener('click', () => this.card.show())
+    this.btn.addEventListener('click', () => this.show())
+  }
+
+  show() {
+    if(this.data == 'nav') {
+      this.card.showNav();
+    } else {
+      this.card.show();
+    }
   }
 }
 
@@ -32,23 +42,19 @@ class Card {
     this.card.classList.add('show');
     serviceTabs.current = this.card;
   }
+
+  showNav() {
+    this.card.classList.toggle('show-nav');
+    document.querySelector('.header-top').classList.toggle('hidden');
+  }
+}
+
+const menu = new Tabs(document.querySelector('header'));
+
+const hide = () => {
+  const head = document.querySelector('header');
+  head.querySelector('.header-top').classList.toggle('hidden');
+  head.querySelector('.card').classList.toggle('show-nav');
 }
 
 const serviceTabs = new Tabs(document.querySelector('.services-tabs'));
-
-class Menu {
-  constructor(head) {
-    this.head = head;
-    this.main = document.querySelector('main');
-    this.navBtn = this.head.querySelector('.btn');
-    this.card = this.head.querySelector('.card');
-    this.navBtn.addEventListener('click', () => this.toggle());
-  }
-
-  toggle() {
-    this.card.classList.toggle('show');
-    this.body.style.opacity = '0';
-  }
-}
-
-const menu = new Menu(document.querySelector('header'));
