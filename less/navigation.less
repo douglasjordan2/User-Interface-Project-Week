@@ -1,14 +1,15 @@
 header {
   color: #fff;
-  position: relative;
+  position: absolute;
   .flexbox(column, none, center);
-  border: 2px solid red;
+  z-index: 1;
 
   .header-top {
     .flexbox(row, space-between, none);
     width: 100%;
     background-color: @bgcolor;
-    position: absolute;
+    position: fixed;
+    top: 0;
 
     h1 {
       font-size: 1.4rem;
@@ -23,7 +24,13 @@ header {
   }
 
   nav {
-    position: absolute;
-    top: -50px;
+    display: none;
+  }
+
+  .show {
+    .flexbox(column, center, center);
+    width: 100vw;
+    height: 100vh;
+    font-size: 4.2rem;
   }
 }
