@@ -52,11 +52,9 @@ body {
     }
 
     .cards {
-      margin-top: 50px;
+      margin: 50px 0;
 
       .card {
-        .flexbox(row, space-between, center);
-        flex-wrap: wrap;
         padding: 5px 30px;
 
         h1 {
@@ -72,6 +70,15 @@ body {
           line-height: 1.65;
           width: 50%;
         }
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .show {
+        .flexbox(row, space-between, center);
+        flex-wrap: wrap;
       }
     }
   }

@@ -578,14 +578,9 @@ body main .btns .btn:hover {
   cursor: pointer;
 }
 body main .cards {
-  margin-top: 50px;
+  margin: 50px 0;
 }
 body main .cards .card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   padding: 5px 30px;
 }
 body main .cards .card h1 {
@@ -599,6 +594,16 @@ body main .cards .card p {
   font-size: 1rem;
   line-height: 1.65;
   width: 50%;
+}
+body main .cards .hidden {
+  display: none;
+}
+body main .cards .show {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 * {
   box-sizing: border-box;
