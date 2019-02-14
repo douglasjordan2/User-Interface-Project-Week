@@ -647,6 +647,51 @@ body main .cards .show {
   align-items: center;
   flex-wrap: wrap;
 }
+.contact {
+  max-width: 500px;
+}
+.contact header {
+  width: 100%;
+}
+.contact .logo-contact h1 {
+  font-size: 3.8rem;
+  left: 20px;
+  bottom: 30px;
+}
+.contact .logo-contact img {
+  width: 100vw;
+}
+.contact h2 {
+  align-self: flex-start;
+  margin: 50px 0px 70px 20px;
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+.contact .contact-main {
+  padding: 0 20px;
+}
+.contact .contact-main form {
+  position: relative;
+}
+.contact .contact-main form .contact-item {
+  font-size: 1.3rem;
+  border: 2px solid red;
+  height: 50px;
+  padding: 100px;
+}
+.contact .contact-main form .email {
+  font-size: 1.3rem;
+  width: 100%;
+  border-radius: 5px;
+  opacity: 0.8;
+  border: 1px solid #000;
+  text-decoration: none;
+}
+.contact .contact-main form .subscript {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
 * {
   box-sizing: border-box;
 }
