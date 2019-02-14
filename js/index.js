@@ -25,8 +25,8 @@ class Button {
     if(this.data == 'nav') {
       this.card.showNav();
     } else {
-      serviceTabs.btns.forEach(btn => btn.style.backgroundColor = 'white');
-      this.btn.style.backgroundColor = '#5E9FB9'
+      tabs.btns.forEach(btn => btn.style.backgroundColor = 'white');
+      this.btn.style.backgroundColor = '#98A4AF'
       this.card.show();
     }
   }
@@ -38,11 +38,11 @@ class Card {
   }
 
   show() {
-    serviceTabs.current.classList.remove('show');
-    serviceTabs.current.classList.add('hidden');
+    tabs.current.classList.remove('show');
+    tabs.current.classList.add('hidden');
     this.card.classList.remove('hidden');
     this.card.classList.add('show');
-    serviceTabs.current = this.card;
+    tabs.current = this.card;
   }
 
   showNav() {
@@ -59,4 +59,4 @@ const hide = () => {
   head.querySelector('.card').classList.toggle('show-nav');
 }
 
-const serviceTabs = new Tabs(document.querySelector('.services-tabs'));
+const tabs = new Tabs(document.querySelector('.tabs'));

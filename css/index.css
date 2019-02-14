@@ -566,34 +566,34 @@ footer .copyright {
     padding: 20px;
   }
 }
-.services {
+body {
   font-family: "Roboto", Arial, sans-serif;
 }
-.services .top {
+body .top {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.services .top .services-logo {
+body .top .services-logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.services .top .services-logo img {
+body .top .services-logo img {
   z-index: -1;
 }
 @media (max-width: 500px) {
-  .services .top .services-logo img {
+  body .top .services-logo img {
     width: 200%;
     height: auto;
     margin-right: 100vw;
     margin-top: 35px;
   }
 }
-.services .top .services-logo h1 {
+body .top .services-logo h1 {
   position: absolute;
   top: calc(100% - 35%);
   right: calc(100% - 31%);
@@ -602,7 +602,7 @@ footer .copyright {
   color: #fff;
 }
 @media (max-width: 500px) {
-  .services .top .services-logo h1 {
+  body .top .services-logo h1 {
     z-index: 1;
     left: 20px;
     top: unset;
@@ -610,30 +610,30 @@ footer .copyright {
     font-size: 3rem;
   }
 }
-.services .top p {
+body .top p {
   width: 1000px;
   padding: 50px 70px 44px 70px;
   line-height: 1.6;
 }
 @media (max-width: 500px) {
-  .services .top p {
+  body .top p {
     width: 96%;
     padding: 40px 20px;
     font-size: 1.1rem;
   }
 }
 @media (max-width: 500px) {
-  .services .top {
+  body .top {
     width: 100%;
   }
 }
-.services main .btns {
+body main .btns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
-.services main .btns .btn {
+body main .btns .btn {
   font-size: 1.2rem;
   background-color: #fff;
   font-weight: bold;
@@ -643,19 +643,19 @@ footer .copyright {
   padding: 13px 0;
   text-align: center;
 }
-.services main .btns .btn:hover {
+body main .btns .btn:hover {
   background-color: #000;
   color: #fff;
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .services main .btns .btn {
+  body main .btns .btn {
     width: 89%;
     margin: 10px 0;
   }
 }
 @media (max-width: 500px) {
-  .services main .btns {
+  body main .btns {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -663,49 +663,49 @@ footer .copyright {
   }
 }
 @media (max-width: 500px) {
-  .services main .btns {
+  body main .btns {
     width: 100%;
   }
 }
-.services main .cards {
+body main .cards {
   margin: 50px 0;
 }
-.services main .cards .card {
+body main .cards .card {
   padding: 5px 30px;
 }
-.services main .cards .card h1 {
+body main .cards .card h1 {
   font-size: 1.6rem;
   font-weight: bold;
   width: 88%;
   padding: 10px 0;
 }
-.services main .cards .card p {
+body main .cards .card p {
   width: 88.5%;
   font-size: 1rem;
   line-height: 1.65;
   width: 50%;
 }
 @media (max-width: 500px) {
-  .services main .cards .card p {
+  body main .cards .card p {
     width: 100%;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 500px) {
-  .services main .cards .card {
+  body main .cards .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .services main .cards .card img {
+  body main .cards .card img {
     margin: 0 auto;
   }
 }
-.services main .cards .hidden {
+body main .cards .hidden {
   display: none;
 }
-.services main .cards .show {
+body main .cards .show {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -713,12 +713,12 @@ footer .copyright {
   flex-wrap: wrap;
 }
 @media (max-width: 500px) {
-  .services main {
+  body main {
     width: 100%;
   }
 }
 @media (max-width: 500px) {
-  .services {
+  body {
     max-width: 500px;
   }
 }
@@ -839,6 +839,7 @@ footer .copyright {
 }
 @media (min-width: 800px) {
   .contact .contact-main form {
+    margin-right: 10%;
     width: 40%;
   }
 }
@@ -851,18 +852,19 @@ footer .copyright {
 }
 @media (min-width: 800px) {
   .contact .contact-main .worksites h2 {
-    font-size: 2rem;
-    margin: 0 0 30px 0;
+    font-size: 1.8rem;
+    margin: 0 0 30px 10%;
   }
 }
 .contact .contact-main .worksites h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
 @media (min-width: 800px) {
   .contact .contact-main .worksites h3 {
     font-size: 1.7rem;
+    margin-left: 10%;
   }
 }
 .contact .contact-main .worksites .address {
@@ -873,6 +875,7 @@ footer .copyright {
   .contact .contact-main .worksites .address {
     font-size: 1.5rem;
     line-height: 2;
+    margin-left: 10%;
   }
 }
 @media (min-width: 800px) {
@@ -884,7 +887,7 @@ footer .copyright {
   .contact .contact-main {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 0 auto 5% auto;
@@ -894,6 +897,19 @@ footer .copyright {
   .contact {
     max-width: 100vw;
   }
+}
+.contact .tabs {
+  margin-top: 5%;
+}
+.contact .tabs h1 {
+  font-size: 3rem;
+  margin: 5% auto;
+}
+.contact .tabs .btns .btn .title {
+  font-size: 0.8rem;
+}
+.contact .cards .card img {
+  height: 50vh;
 }
 * {
   box-sizing: border-box;
