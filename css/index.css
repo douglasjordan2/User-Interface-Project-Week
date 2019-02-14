@@ -734,14 +734,44 @@ footer .copyright {
   left: 20px;
   bottom: 30px;
 }
+@media (min-width: 800px) {
+  .contact .logo-contact h1 {
+    left: 10%;
+  }
+}
 .contact .logo-contact img {
   width: 100vw;
+}
+@media (min-width: 800px) {
+  .contact .logo-contact img {
+    display: none;
+  }
+}
+.contact .logo-contact .desktop-img {
+  display: none;
+}
+@media (min-width: 800px) {
+  .contact .logo-contact .desktop-img {
+    display: unset;
+    height: auto;
+  }
+}
+@media (min-width: 800px) {
+  .contact .logo-contact {
+    width: unset;
+  }
 }
 .contact h2 {
   align-self: flex-start;
   margin: 50px 0px 70px 20px;
   font-size: 2.7rem;
   font-weight: bold;
+}
+@media (min-width: 800px) {
+  .contact h2 {
+    font-size: 2rem;
+    margin: 50px 11%;
+  }
 }
 .contact .contact-main {
   margin: 0 20px;
@@ -802,6 +832,16 @@ footer .copyright {
   padding: 10px 0;
   margin-top: 20px;
 }
+@media (min-width: 800px) {
+  .contact .contact-main form ul li #submit {
+    width: 50%;
+  }
+}
+@media (min-width: 800px) {
+  .contact .contact-main form {
+    width: 40%;
+  }
+}
 .contact .contact-main .worksites {
   align-self: flex-start;
 }
@@ -809,14 +849,51 @@ footer .copyright {
   margin: 40px 0 30px 0;
   font-size: 1.5rem;
 }
+@media (min-width: 800px) {
+  .contact .contact-main .worksites h2 {
+    font-size: 2rem;
+    margin: 0 0 30px 0;
+  }
+}
 .contact .contact-main .worksites h3 {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
+@media (min-width: 800px) {
+  .contact .contact-main .worksites h3 {
+    font-size: 1.7rem;
+  }
+}
 .contact .contact-main .worksites .address {
   line-height: 1.5;
   margin-bottom: 20px;
+}
+@media (min-width: 800px) {
+  .contact .contact-main .worksites .address {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+}
+@media (min-width: 800px) {
+  .contact .contact-main .worksites {
+    width: 40%;
+  }
+}
+@media (min-width: 800px) {
+  .contact .contact-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto 5% auto;
+  }
+}
+@media (min-width: 800px) {
+  .contact {
+    max-width: 100vw;
+  }
 }
 * {
   box-sizing: border-box;
