@@ -35,8 +35,8 @@
 	<main class='contact-main'>
 		<form action="">
 			<span class='contact-item'>Email</span>
-			<input type="email" class='email' placeholder="Enter Email">
-			<span class='subscript'>We'll never share your email with anyone else.</p>
+			<input type="email" class='email' placeholder="Enter Email" />
+			<span class='subscript'>We'll never share your email with anyone else.</span>
 			<span class='contact-item'>How many buildings do you need planned?</span>
 			<select name="buildings">
 				<option value="1">1</option>
@@ -44,45 +44,57 @@
 				<option value="3">3</option>
 				<option value="4">4</option>
 				<option value="5">5</option>
-			</select><br>
+			</select>
 			<span class='contact-item'>Provide a brief overview of your project needs:</span>
-			<textarea name="overview" cols="30" rows="10"></textarea>
-			<input type="radio">&nbsp;I am a small business
-			<input type="radio">&nbsp;I am a residential owner
-			<input type="radio">&nbsp;I am a corporation
-			<input type="submit" placeholder="Submit">
+			<textarea name="overview" rows="20" cols='72'></textarea>
+			<ul>
+				<li>
+					<input type="radio">&nbsp;I am a small business
+				</li>
+				<li>
+					<input type="radio">&nbsp;I am a residential owner
+				</li>
+				<li>
+					<input type="radio">&nbsp;I am a corporation
+				</li>
+				<li>
+					<div id="submit">Submit</div>
+				</li>
+			</ul>
 		</form>
 
-		<h2>Where We Work</h2>
+		<div class='worksites'>
+			<h2>Where We Work</h2>
 
-		<h3>New York</h3>
-		<p class='address'>
-			123 Lane<br>
-			Suite 100<br>
-			Albany, NY 12345<br>
-			202 555 0144
-		</p>
+			<h3>New York</h3>
+			<p class='address'>
+				123 Lane<br>
+				Suite 100<br>
+				Albany, NY 12345<br>
+				202 555 0144
+			</p>
 
-		<h3>Florida</h3>
-		<p class='address'>
-			Ocean Drive<br>
-			Suite 201<br>
-			Orlando, FL 22345<br>
-			502 555 0144
-		</p>
+			<h3>Florida</h3>
+			<p class='address'>
+				Ocean Drive<br>
+				Suite 201<br>
+				Orlando, FL 22345<br>
+				502 555 0144
+			</p>
 
-		<h3>California</h3>
-		<p class='address'>
-			Mountain Street<br>
-			Suite 105<br>
-			San Diego, CA 22345<br>
-			702 555 0144
-		</p>
+			<h3>California</h3>
+			<p class='address'>
+				Mountain Street<br>
+				Suite 105<br>
+				San Diego, CA 22345<br>
+				702 555 0144
+			</p>
+		</div>
 	</main>
 
 	<footer>
 		<div class='footer-right'>
-			<h3>Interested in starting a project?  </h3>
+			<h3>Interested in starting a project?</h3>
 			<h3>Let’s talk:</h3>
 	
 			<input type="email" placeholder="Enter email">
