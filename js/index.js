@@ -25,6 +25,8 @@ class Button {
     if(this.data == 'nav') {
       this.card.showNav();
     } else {
+      serviceTabs.btns.forEach(btn => btn.style.backgroundColor = 'white');
+      this.btn.style.backgroundColor = '#5E9FB9'
       this.card.show();
     }
   }

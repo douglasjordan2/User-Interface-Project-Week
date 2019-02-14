@@ -566,26 +566,34 @@ footer .copyright {
     padding: 20px;
   }
 }
-body {
+.services {
   font-family: "Roboto", Arial, sans-serif;
 }
-body .top {
+.services .top {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body .top .services-logo {
+.services .top .services-logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-body .top .services-logo img {
+.services .top .services-logo img {
   z-index: -1;
 }
-body .top .services-logo h1 {
+@media (max-width: 500px) {
+  .services .top .services-logo img {
+    width: 200%;
+    height: auto;
+    margin-right: 100vw;
+    margin-top: 35px;
+  }
+}
+.services .top .services-logo h1 {
   position: absolute;
   top: calc(100% - 35%);
   right: calc(100% - 31%);
@@ -593,18 +601,39 @@ body .top .services-logo h1 {
   font-size: 4rem;
   color: #fff;
 }
-body .top p {
+@media (max-width: 500px) {
+  .services .top .services-logo h1 {
+    z-index: 1;
+    left: 20px;
+    top: unset;
+    bottom: 20px;
+    font-size: 3rem;
+  }
+}
+.services .top p {
   width: 1000px;
   padding: 50px 70px 44px 70px;
   line-height: 1.6;
 }
-body main .btns {
+@media (max-width: 500px) {
+  .services .top p {
+    width: 96%;
+    padding: 40px 20px;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 500px) {
+  .services .top {
+    width: 100%;
+  }
+}
+.services main .btns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
-body main .btns .btn {
+.services main .btns .btn {
   font-size: 1.2rem;
   background-color: #fff;
   font-weight: bold;
@@ -614,38 +643,84 @@ body main .btns .btn {
   padding: 13px 0;
   text-align: center;
 }
-body main .btns .btn:hover {
+.services main .btns .btn:hover {
   background-color: #000;
   color: #fff;
   cursor: pointer;
 }
-body main .cards {
+@media (max-width: 500px) {
+  .services main .btns .btn {
+    width: 89%;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 500px) {
+  .services main .btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .services main .btns {
+    width: 100%;
+  }
+}
+.services main .cards {
   margin: 50px 0;
 }
-body main .cards .card {
+.services main .cards .card {
   padding: 5px 30px;
 }
-body main .cards .card h1 {
+.services main .cards .card h1 {
   font-size: 1.6rem;
   font-weight: bold;
   width: 88%;
   padding: 10px 0;
 }
-body main .cards .card p {
+.services main .cards .card p {
   width: 88.5%;
   font-size: 1rem;
   line-height: 1.65;
   width: 50%;
 }
-body main .cards .hidden {
+@media (max-width: 500px) {
+  .services main .cards .card p {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .services main .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .services main .cards .card img {
+    margin: 0 auto;
+  }
+}
+.services main .cards .hidden {
   display: none;
 }
-body main .cards .show {
+.services main .cards .show {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .services main {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .services {
+    max-width: 500px;
+  }
 }
 .contact {
   max-width: 500px;
