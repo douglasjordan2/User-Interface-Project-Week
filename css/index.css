@@ -911,6 +911,19 @@ body main .cards .show {
 .contact .cards .card img {
   height: 50vh;
 }
+.projects .tabs {
+  margin-top: 5%;
+}
+.projects .tabs h1 {
+  font-size: 2rem;
+  margin: 5% auto;
+}
+.projects .tabs .btns .btn .title {
+  font-size: 0.8rem;
+}
+.projects .cards .card img {
+  height: 50vh;
+}
 * {
   box-sizing: border-box;
 }
