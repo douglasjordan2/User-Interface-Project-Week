@@ -8,7 +8,7 @@ body {
       .flexbox(row, center, center);
       position: relative;
 
-      img {
+      .service-img-desktop {
         z-index: -1;
 
         @media @phone {
@@ -16,6 +16,16 @@ body {
           height: auto;
           margin-right: 100vw;
           margin-top: 35px;
+          display: none;
+        }
+      }
+
+      .service-img-mobile {
+        display: none;
+
+        @media @phone {
+          display: block;
+          width: 100vw;
         }
       }
 
@@ -120,6 +130,16 @@ body {
           img {
             margin: 0 auto;
           }
+        }
+
+        .desktop-card {
+          @media @phone {
+            display: none;
+          }
+        }
+
+        .mobile-card {
+          .mobile-img();
         }
       }
 
