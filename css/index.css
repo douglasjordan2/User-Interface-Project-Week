@@ -400,16 +400,6 @@ header .hidden {
   visibility: hidden;
 }
 header nav {
-  display: none;
-}
-header nav a {
-  text-decoration: none;
-  color: #fff;
-}
-header nav a:active {
-  color: #000;
-}
-header .show-nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -417,18 +407,29 @@ header .show-nav {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  top: 0;
+  top: -100vh;
   font-size: 4.2rem;
   background-color: #98A4AF;
-  opacity: 0.9;
+  opacity: 0;
 }
-header .show-nav img {
+header nav #hide-nav {
   position: absolute;
   top: 2vh;
   right: 9vw;
 }
-header .show-nav img:hover {
+header nav #hide-nav:hover {
   cursor: pointer;
+}
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0;
+  margin-top: 0;
+  padding-right: 200px;
+  padding-bottom: 0;
+}
+header nav a:active {
+  color: #000;
 }
 /*------------------------------------*\
 RESET

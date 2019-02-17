@@ -12,20 +12,20 @@
 </head>
 
 <body class='about'>
-<header>
-	<div class='header-top'>
-		<h1>S&J</h1>
-		<img class='btn' data-tab='nav' src="./img/nav-hamburger.png" alt='&#9776;'/>
-	</div>
-	<nav class='card' data-tab='nav'>
-		<img src='./img/nav-hamburger-close.png' onclick='hide()'/>
-    <a href='index.html'>Home</a>
-    <a href='about.html'>About</a>
-    <a href='services.html'>Services</a>
-    <a href='projects.html'>Projects</a>
-		<a href='contact.html'>Contact</a>
-	</nav>
-</header>
+  <header>
+    <div class='header-top'>
+      <h1>S&J</h1>
+      <img class='btn' src="./img/nav-hamburger.png" alt='&#9776;'/>
+    </div>
+    <nav class='card' id="nav">
+      <img id="hide-nav" src='./img/nav-hamburger-close.png'/>
+      <a id="a1" href='index.html'>Home</a>
+      <a id="a2" href='about.html'>About</a>
+      <a id="a3" href='services.html'>Services</a>
+      <a id="a4" href='projects.html'>Projects</a>
+      <a id="a5" href='contact.html'>Contact</a>
+    </nav>
+  </header>
 
 <main class='tabs'>
   <h1>Meet the Team!</h1>
@@ -114,6 +114,8 @@
   </div>
 </footer>
   
-    <script src="./js/tab-component.js"></script>
+  <script src="./js/tab-component.js"></script>
+  <script src="./js/navigation.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   </body>
   </html>
