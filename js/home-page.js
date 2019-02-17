@@ -1,0 +1,54 @@
+AOS.init({
+  disable: false,
+  startEvent: 'DOMContentLoaded',
+  initClassName: 'aos-init',
+  animatedClassName: 'aos-animate',
+  useClassNames: false,
+  disableMutationObserver: false,
+  debounceDelay: 50,
+  throttleDelay: 99,
+  offset: 120,
+  delay: 0,
+  duration: 400,
+  easing: 'ease',
+  once: true,
+  mirror: true,
+  anchorPlacement: 'top-bottom',
+});
+
+const logo = document.querySelector('.logo .home');
+const slogan = document.querySelector('.logo h1');
+const overlays=document.querySelectorAll('.overlay');
+
+window.addEventListener('scroll', () => {
+  document.querySelector('main').style.marginTop = "30vw";
+  logo.classList.add('fade-up');
+  if(Array.from(logo.classList).includes('fade-down')) {
+    logo.classList.remove('fade-down');
+  }
+  
+  return (() => {
+    if(window.scrollY < 25) {
+      logo.classList.add('fade-down');
+      logo.classList.remove('fade-up');
+      overlays[0].classList.add('slide-up')
+    }
+
+    if(window.scrollY < 100) {
+      slogan.style.opacity = '1';
+    } else {
+      slogan.style.opacity = '0'
+    }
+
+
+  })();
+});
+
+const fadeIn = section => {
+  section.style.position = 'absolute';
+}
+
+const sections = document.querySelectorAll('section');
+sections.forEach(() => {
+
+})

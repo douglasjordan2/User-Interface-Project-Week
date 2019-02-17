@@ -1,58 +1,73 @@
 /* Your Code Goes Here */
-body {
+.index {
   background-color: #fff;
   color: #222;
   font-family: 'Roboto', Arial, sans-serif;
   width: 100%;
-}
-body .logo {
   position: relative;
-  z-index: -1;
+}
+.index .logo {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-body .logo .home {
+.index .logo .home {
   z-index: 0;
   height: 100vh;
   max-width: 100vw;
   margin: 0 auto;
+  position: absolute;
+  top: 0;
+  opacity: 1;
 }
 @media (max-width: 800px) {
-  body .logo .home {
+  .index .logo .home {
     max-width: 800px;
     height: auto;
   }
 }
 @media (max-width: 500px) {
-  body .logo .home {
+  .index .logo .home {
     display: none;
   }
 }
-body .logo .mobile {
+.index .logo .fade-up {
+  opacity: 0;
+  top: -100vh;
+  transition: all 1s ease-in;
+}
+.index .logo .fade-down {
+  opacity: 1;
+  top: 0;
+  transition: all 1s ease-out;
+}
+.index .logo .mobile {
   display: none;
 }
 @media (max-width: 500px) {
-  body .logo .mobile {
+  .index .logo .mobile {
     display: block;
     width: 100vw;
   }
 }
-body .logo h1 {
+.index .logo h1 {
+  position: absolute;
   z-index: 1;
   font-size: 4rem;
   font-weight: 500;
-  position: absolute;
-  bottom: 50px;
-  left: calc(100% - 90%);
+  position: fixed;
+  top: 55vh;
+  right: 57%;
   line-height: 75px;
   color: #fff;
   letter-spacing: 1.3px;
   text-shadow: -1px 1px white;
 }
 @media (max-width: 500px) {
-  body .logo h1 {
+  .index .logo h1 {
     font-size: 3rem;
     line-height: 1.2;
     bottom: 20px;
@@ -60,48 +75,50 @@ body .logo h1 {
   }
 }
 @media (max-width: 500px) {
-  body .logo {
+  .index .logo {
     margin-bottom: 40px;
   }
 }
-body main {
+.index main {
   display: flex;
   flex-direction: column;
   justify-content: none;
   align-items: none;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 100vh auto 50px auto;
+  position: relative;
 }
-body main section {
+.index main .overlay {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: none;
   padding: 50px 10px;
+  margin-bottom: 20vh;
 }
-body main section div {
+.index main .overlay div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: none;
   height: auto;
 }
-body main section div h2 {
+.index main .overlay div h2 {
   font-weight: bold;
   font-size: 1.5rem;
   padding: 13px 0;
 }
 @media (max-width: 500px) {
-  body main section div h2 {
+  .index main .overlay div h2 {
     margin-top: 20px;
   }
 }
-body main section div p {
+.index main .overlay div p {
   line-height: 1.5;
   padding: 13px 0;
   width: 95%;
 }
-body main section div .button {
+.index main .overlay div .button {
   width: 140px;
   padding: 15px 0;
   margin-top: 10px;
@@ -113,59 +130,59 @@ body main section div .button {
   font-size: 1rem;
 }
 @media (max-width: 800px) {
-  body main section div .button {
+  .index main .overlay div .button {
     width: 90%;
   }
 }
 @media (max-width: 500px) {
-  body main section div .button {
+  .index main .overlay div .button {
     width: 100%;
   }
 }
 @media (max-width: 500px) {
-  body main section div {
+  .index main .overlay div {
     width: 90%;
     order: 1;
   }
 }
-body main section .img-one-home {
+.index main .overlay .img-one-home {
   margin: 0 20px;
 }
 @media (max-width: 500px) {
-  body main section .img-one-home {
+  .index main .overlay .img-one-home {
     display: none;
   }
 }
-body main section .img-one-mobile {
+.index main .overlay .img-one-mobile {
   display: none;
 }
 @media (max-width: 500px) {
-  body main section .img-one-mobile {
+  .index main .overlay .img-one-mobile {
     display: block;
     width: 90vw;
     margin: 0 auto;
   }
 }
-body main section .img-two-home {
+.index main .overlay .img-two-home {
   margin-right: 40px;
 }
 @media (max-width: 500px) {
-  body main section .img-two-home {
+  .index main .overlay .img-two-home {
     display: none;
   }
 }
-body main section .img-two-mobile {
+.index main .overlay .img-two-mobile {
   display: none;
 }
 @media (max-width: 500px) {
-  body main section .img-two-mobile {
+  .index main .overlay .img-two-mobile {
     display: block;
     width: 90vw;
     margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
-  body main section {
+  .index main .overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,30 +190,30 @@ body main section .img-two-mobile {
     padding: 20px 0;
   }
 }
-body main .content {
+.index main .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body main .content h2 {
+.index main .content h2 {
   font-size: 1.4rem;
   font-weight: bold;
   align-self: flex-start;
   margin-bottom: -30px;
 }
 @media (max-width: 500px) {
-  body main .content h2 {
+  .index main .content h2 {
     margin: 0 auto;
     width: 90%;
   }
 }
-body main .content .img-overlay {
+.index main .content .img-overlay {
   position: relative;
   align-self: flex-start;
   margin: 80px 0 80px 0;
 }
-body main .content .img-overlay .under {
+.index main .content .img-overlay .under {
   position: absolute;
   font-size: 1.4rem;
   background-color: #d8d8d8;
@@ -206,47 +223,47 @@ body main .content .img-overlay .under {
   border: 1px solid #fff;
 }
 @media (max-width: 500px) {
-  body main .content .img-overlay .under {
+  .index main .content .img-overlay .under {
     width: 80vw;
     text-align: center;
   }
 }
-body main .content .img-overlay .right {
+.index main .content .img-overlay .right {
   right: -1px;
 }
 @media (max-width: 500px) {
-  body main .content .img-overlay .right {
+  .index main .content .img-overlay .right {
     right: calc(100vw - 90vw);
   }
 }
-body main .content .img-overlay .left {
+.index main .content .img-overlay .left {
   left: -1px;
 }
 @media (max-width: 500px) {
-  body main .content .img-overlay .left {
+  .index main .content .img-overlay .left {
     left: calc(100vw - 90vw);
   }
 }
 @media (max-width: 500px) {
-  body main .content .img-overlay {
+  .index main .content .img-overlay {
     margin: 50px auto 100px auto;
     align-self: unset;
     width: 100vw;
   }
 }
-body main .content p {
+.index main .content p {
   width: 50%;
   line-height: 1.8;
   margin-top: 10px;
   font-size: 1.1rem;
 }
 @media (max-width: 800px) {
-  body main .content p {
+  .index main .content p {
     width: 90%;
   }
 }
 @media (max-width: 500px) {
-  body main .content p {
+  .index main .content p {
     width: 90%;
     margin: 0;
     font-size: 1.4rem;
@@ -254,71 +271,71 @@ body main .content p {
   }
 }
 @media (max-width: 500px) {
-  body main .content {
+  .index main .content {
     max-width: 100%;
   }
-  body main .content img {
+  .index main .content img {
     width: auto;
     margin-left: -20px;
   }
 }
 @media (max-width: 500px) {
-  body main .content .overlay-home {
+  .index main .content .overlay-home {
     display: none;
   }
 }
 @media (max-width: 800px) {
-  body main .content .overlay-home {
+  .index main .content .overlay-home {
     width: 100%;
   }
 }
-body main .content .overlay-mobile {
+.index main .content .overlay-mobile {
   display: none;
 }
 @media (max-width: 500px) {
-  body main .content .overlay-mobile {
+  .index main .content .overlay-mobile {
     display: block;
     width: 90vw;
     margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
-  body main .content :nth-child(1) {
+  .index main .content :nth-child(1) {
     order: 0;
   }
-  body main .content :nth-child(2) {
+  .index main .content :nth-child(2) {
     order: 0;
   }
-  body main .content :nth-child(3) {
+  .index main .content :nth-child(3) {
     order: 0;
   }
-  body main .content :nth-child(4) {
+  .index main .content :nth-child(4) {
     order: 0;
   }
-  body main .content :nth-child(5) {
+  .index main .content :nth-child(5) {
     order: 0;
   }
-  body main .content :nth-child(6) {
+  .index main .content :nth-child(6) {
     order: 0;
   }
-  body main .content :nth-child(7) {
+  .index main .content :nth-child(7) {
     order: 0;
   }
-  body main .content :nth-child(8) {
+  .index main .content :nth-child(8) {
     order: 0;
   }
-  body main .content :nth-child(9) {
+  .index main .content :nth-child(9) {
     order: 0;
   }
-  body main .content :nth-child(10) {
+  .index main .content :nth-child(10) {
     order: 0;
   }
-  body main .content :nth-child(11) {
+  .index main .content :nth-child(11) {
     order: 0;
   }
 }
 @media (max-width: 500px) {
-  body main {
+  .index main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -327,8 +344,18 @@ body main .content .overlay-mobile {
   }
 }
 @media (max-width: 800px) {
-  body {
+  .index {
     max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px) {
+  .index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 header {
@@ -338,7 +365,7 @@ header {
   flex-direction: column;
   justify-content: none;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
 }
 header .header-top {
   display: flex;
