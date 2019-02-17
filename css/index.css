@@ -60,7 +60,7 @@
   font-weight: 500;
   position: fixed;
   top: 55vh;
-  right: 57%;
+  right: 60%;
   line-height: 75px;
   color: #fff;
   letter-spacing: 1.3px;
@@ -88,7 +88,7 @@
   margin: 100vh auto 50px auto;
   position: relative;
 }
-.index main .overlay {
+.index main .focus {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -96,29 +96,29 @@
   padding: 50px 10px;
   margin-bottom: 20vh;
 }
-.index main .overlay div {
+.index main .focus div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: none;
   height: auto;
 }
-.index main .overlay div h2 {
+.index main .focus div h2 {
   font-weight: bold;
   font-size: 1.5rem;
   padding: 13px 0;
 }
 @media (max-width: 500px) {
-  .index main .overlay div h2 {
+  .index main .focus div h2 {
     margin-top: 20px;
   }
 }
-.index main .overlay div p {
+.index main .focus div p {
   line-height: 1.5;
   padding: 13px 0;
   width: 95%;
 }
-.index main .overlay div .button {
+.index main .focus div .button {
   width: 140px;
   padding: 15px 0;
   margin-top: 10px;
@@ -130,59 +130,59 @@
   font-size: 1rem;
 }
 @media (max-width: 800px) {
-  .index main .overlay div .button {
+  .index main .focus div .button {
     width: 90%;
   }
 }
 @media (max-width: 500px) {
-  .index main .overlay div .button {
+  .index main .focus div .button {
     width: 100%;
   }
 }
 @media (max-width: 500px) {
-  .index main .overlay div {
+  .index main .focus div {
     width: 90%;
     order: 1;
   }
 }
-.index main .overlay .img-one-home {
+.index main .focus .img-one-home {
   margin: 0 20px;
 }
 @media (max-width: 500px) {
-  .index main .overlay .img-one-home {
+  .index main .focus .img-one-home {
     display: none;
   }
 }
-.index main .overlay .img-one-mobile {
+.index main .focus .img-one-mobile {
   display: none;
 }
 @media (max-width: 500px) {
-  .index main .overlay .img-one-mobile {
+  .index main .focus .img-one-mobile {
     display: block;
     width: 90vw;
     margin: 0 auto;
   }
 }
-.index main .overlay .img-two-home {
+.index main .focus .img-two-home {
   margin-right: 40px;
 }
 @media (max-width: 500px) {
-  .index main .overlay .img-two-home {
+  .index main .focus .img-two-home {
     display: none;
   }
 }
-.index main .overlay .img-two-mobile {
+.index main .focus .img-two-mobile {
   display: none;
 }
 @media (max-width: 500px) {
-  .index main .overlay .img-two-mobile {
+  .index main .focus .img-two-mobile {
     display: block;
     width: 90vw;
     margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
-  .index main .overlay {
+  .index main .focus {
     display: flex;
     flex-direction: column;
     justify-content: center;

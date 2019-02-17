@@ -34,21 +34,11 @@ window.addEventListener('scroll', () => {
       overlays[0].classList.add('slide-up')
     }
 
-    if(window.scrollY < 100) {
+    if(window.scrollY < 60) {
       slogan.style.opacity = '1';
+      slogan.style.transition = 'opacity 1s ease-out'
     } else {
       slogan.style.opacity = '0'
     }
-
-
   })();
 });
-
-const fadeIn = section => {
-  section.style.position = 'absolute';
-}
-
-const sections = document.querySelectorAll('section');
-sections.forEach(() => {
-
-})
