@@ -11,23 +11,26 @@
 	<![endif]-->
 </head>
 
-<body>
+<body class='services'>
 	<header>
 		<div class='header-top'>
 			<h1>S&J</h1>
-			<img class='btn' data-tab='nav' src="./img/nav-hamburger.png" alt='&#9776;'/>
+			<img class='btn' src="./img/nav-hamburger.png" alt='&#9776;'/>
 		</div>
-		<nav class='card' data-tab='nav'>
-			<img src='./img/nav-hamburger-close.png' onclick='hide()'/>
-			<a href='index.html'>Home</a>
-			<a href='services.html'>Services</a>
-			<a href='contact.html'>Contact</a>
+		<nav class='card' id="nav">
+			<img id="hide-nav" src='./img/nav-hamburger-close.png'/>
+			<a id="a1" href='index.html'>Home</a>
+			<a id="a2" href='about.html'>About</a>
+			<a id="a3" href='services.html'>Services</a>
+			<a id="a4" href='projects.html'>Projects</a>
+			<a id="a5" href='contact.html'>Contact</a>
 		</nav>
 	</header>
 
 	<div class='top'>
 		<div class='services-logo'>
-			<img src="./img/services/services-jumbotron.png" alt="main services image"/>
+			<img class='service-img-desktop' src="./img/services/services-jumbotron.png" alt="main services image"/>
+			<img class='service-img-mobile' src="./img/services/services-mobile-jumbotron.png" alt="">
 			<h1>Services</h1>
 		</div>
 
@@ -37,9 +40,9 @@
 	</div>
 
 <!-- *** NOTE *** Tab Navigator Content: I used the same text for each tab to make it easy, Note that the images and text do change on click but you can just use the same text for each tab element.  All the images should be in the img folder. -->
-<main class='services-tabs'>
+<main class='tabs'>
 	<div class='btns'>
-  	<span class='btn' data-tab='1'>Pre-Construction</span>
+  	<span class='btn' data-tab='1' style='background-color: #98A4AF'>Pre-Construction</span>
 		<span class='btn' data-tab='2'>Construction</span>
 		<span class='btn' data-tab='3'>Design Build</span>
 		<span class='btn' data-tab='4'>Sustainability</span>
@@ -53,7 +56,8 @@
 			<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.<br><br>
 			Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
 
-			<img src="./img/services/services-tab-pre-construction-img.png" alt="pre construction image" />
+			<img class='desktop-card' src="./img/services/services-tab-pre-construction-img.png" alt="pre construction image" />
+			<img class='mobile-card' src="./img/services/services-tab-mobile-pre-construction-img.png" alt="">
 		</div>
 
 		<div class='card construction' data-tab='2'>
@@ -61,7 +65,8 @@
 			<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.<br><br>
 			Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
 
-			<img src="./img/services/services-tab-construction-img.png" alt="construction image" />
+			<img class='desktop-card' src="./img/services/services-tab-construction-img.png" alt="construction image" />
+			<img class='mobile-card' src="./img/services/services-tab-mobile-construction-img.png" alt="">
 		</div>
 
 		<div class='card design-build' data-tab='3'>
@@ -69,7 +74,8 @@
 			<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.<br><br>
 			Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
 
-			<img src="./img/services/services-tab-design-build-img.png" alt="design build image" />
+			<img class='desktop-card' src="./img/services/services-tab-design-build-img.png" alt="design build image" />
+			<img class='mobile-card' src="./img/services/services-tab-mobile-design-build-img.png" alt="">
 		</div>
 
 		<div class='card sustainability' data-tab='4'>
@@ -77,7 +83,8 @@
 			<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.<br><br>
 			Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
 
-			<img src="./img/services/services-tab-sustainability-img.png" alt="sustainability image" />
+			<img class='desktop-card' src="./img/services/services-tab-sustainability-img.png" alt="sustainability image" />
+			<img class='mobile-card' src="./img/services/services-tab-mobile-sustainability-img.png" alt="">
 		</div>
 	</div>
 </main>
@@ -131,6 +138,8 @@
 
 
 
-	<script src="./js/index.js"></script>
+	<script src="./js/tab-component.js"></script>
+	<script src="./js/navigation.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </body>
 </html>
