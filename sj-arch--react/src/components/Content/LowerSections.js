@@ -17,7 +17,8 @@ class LowerSections extends Component {
       right: (id + 2) % 2 === 0 ? null : '-1px',
       bottom: '-30px'
     })
-}
+  }
+  
   render() {
     const { image, overlay, info, id } = this.props.section
     return (

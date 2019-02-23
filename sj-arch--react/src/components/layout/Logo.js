@@ -24,7 +24,8 @@ const logo = {
   position: 'relative',
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'center'
+  alignItems: 'center',
+  maxWidth: '100vw'
 }
 
 const img = {
@@ -36,7 +37,7 @@ const img = {
 const h1 = {
   position: 'absolute',
   bottom: '10%',
-  left: '15%',
+  left: '10%',
   fontSize: '250%',
   zIndex: '0',
   color: 'white'
